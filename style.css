@@ -1,3 +1,117 @@
+@import url('https://fonts.googleapis.com/css2? family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+
 body{
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+main {
+    width: 600px;
+    height: 450px;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    background-color: white;
+    box-shadow: 5px 10px 20px 0px rgb(83, 82, 84);
+}
+#first{
+    width: 300px;
+    height: 450px;
+}
+#first-mob{
+    display: none;
+}
+section{
+    padding: 25px;
+}
+.titre{
+    color: hsl(228, 12%, 48%);
+    font-size: 12px;
+    text-transform: uppercase;
+    font-family:"Fraunces", sans-serif;
+    font-weight: 700;
+    letter-spacing: 5px;
+    
+}
+.description{
+   color: hsl(212, 21%, 14%);
+   font-family:"Montserrat", sans-serif ;
+   font-weight:700;
+   font-size: 28px;
+   padding-right: 20px;
+   line-height: 28px;
+   padding-top: 18px;
+
 
 }
+p{
+    color: hsl(228, 12%, 48%);
+    font-family:"Montserrat", sans-serif;
+    font-size: 14px;
+    padding-top: 18px;
+    line-height: 22px;
+    padding-bottom: 20px;
+}
+.prix{
+    color: hsl(158, 36%, 37%);
+    font-size: 27px ;
+    font-family:"Montserrat", sans-serif;
+    font-weight: 700;
+    padding-bottom: 30px;
+    display: flex;
+    align-items: center;
+}
+span{
+    color: hsl(228, 12%, 48%);
+    font-size: 12px;
+    font-family:"Fraunces", sans-serif;
+    text-decoration: line-through;
+    font-weight: 200;
+    padding-left: 8px;
+
+}
+.btn{
+    background-color: hsl(158, 36%, 37%);
+    width: 220px;
+    padding: 15px;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+a{
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-family:"Montserrat", sans-serif;
+
+}
+#second{
+    margin-right: 7px;
+}
+ @media only screen and (max-width: 633px) {
+    main {
+        flex-direction: column;
+        width: 360px;
+        height: 700px;
+    }
+    #first{
+        display: none;
+    }
+    #first-mob{
+        display: block;
+    }
+    p{
+        padding-right: 16px;
+    }
+    .btn{
+        width: 280px;
+    }
+  
+
+ }
